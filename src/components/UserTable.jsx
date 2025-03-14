@@ -28,7 +28,6 @@ const UserTable = ({ users }) => {
     canPreviousPage,
     canNextPage,
     pageOptions,
-    gotoPage,
     nextPage,
     previousPage,
     setPageSize,
@@ -79,20 +78,11 @@ const UserTable = ({ users }) => {
         </tbody>
       </table>
       <div className="pagination">
-        <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
-          {"<<"}
-        </button>
         <button onClick={() => previousPage()} disabled={!canPreviousPage}>
           {"<"}
         </button>
         <button onClick={() => nextPage()} disabled={!canNextPage}>
           {">"}
-        </button>
-        <button
-          onClick={() => gotoPage(pageOptions.length - 1)}
-          disabled={!canNextPage}
-        >
-          {">>"}
         </button>
         <span>
           Page{" "}
