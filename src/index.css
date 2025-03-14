@@ -264,7 +264,7 @@ tr:hover {
     text-align: right;
     padding-left: 50%;
     position: relative;
-  }
+  } 
 
   th::before, td::before {
     content: attr(data-label);
@@ -276,3 +276,4 @@ tr:hover {
     text-align: left;
   }
 }
+ 

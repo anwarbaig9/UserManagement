@@ -1,4 +1,4 @@
-import React, { useContext, useMemo } from "react";
+import React, { useMemo } from "react";
 import { useTable, useSortBy, usePagination } from "react-table";
 const UserTable = ({ users }) => {
   const data = useMemo(() => users, [users]);
